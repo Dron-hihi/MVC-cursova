@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CursovaMVC.Data
+{
+    public class Sity
+    {
+        /// <summary>
+        /// ID
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
+        /// Назва міста
+        /// </summary>
+        public string Name { get; set; }
+    }
+}
