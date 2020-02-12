@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace CursovaMVC.Data
 {
+    /// <summary>
+    /// Міста
+    /// </summary>
     public class Sity
     {
         /// <summary>

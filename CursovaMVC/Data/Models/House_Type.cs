@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace CursovaMVC.Data.Models
 {
+    /// <summary>
+    /// Типи конструкції будинку
+    /// </summary>
     public class House_Type
     {
         /// <summary>

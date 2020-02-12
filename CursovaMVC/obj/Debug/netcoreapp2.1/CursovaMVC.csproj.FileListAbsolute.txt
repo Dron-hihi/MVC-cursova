@@ -2,7 +2,6 @@ C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\bin\Debug\netcoreapp2.1\Curso
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\bin\Debug\netcoreapp2.1\CursovaMVC.runtimeconfig.json
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\bin\Debug\netcoreapp2.1\CursovaMVC.runtimeconfig.dev.json
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\bin\Debug\netcoreapp2.1\CursovaMVC.dll
-C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.csprojAssemblyReference.cache
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.csproj.CoreCompileInputs.cache
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.RazorAssemblyInfo.cache
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.RazorAssemblyInfo.cs
@@ -23,3 +22,10 @@ C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.RazorTargetAssemblyInfo.cache
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.RazorTargetAssemblyInfo.cs
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\bin\Debug\netcoreapp2.1\CursovaMVC.pdb
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\bin\Debug\netcoreapp2.1\CursovaMVC.Views.dll
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\bin\Debug\netcoreapp2.1\CursovaMVC.Views.pdb
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.Views.pdb
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.dll
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.pdb
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.csproj.CopyComplete
