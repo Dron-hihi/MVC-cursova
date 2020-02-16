@@ -29,3 +29,4 @@ C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Curso
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.dll
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.pdb
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.csproj.CopyComplete
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.csprojAssemblyReference.cache
