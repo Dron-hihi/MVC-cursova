@@ -22,7 +22,7 @@ IdentityRoleClaim<string>, IdentityUserToken<string>>
         public virtual DbSet<House> Houses { get; set; }
         public virtual DbSet<House_Type> House_Types { get; set; }
         public virtual DbSet<Office> Offices { get; set; }
-        public virtual DbSet<Sity> Sities { get; set; }
+        public virtual DbSet<City> Sities { get; set; }
         public virtual DbSet<Storage> Storages { get; set; }
         public virtual DbSet<Storage_Type> Storage_Types { get; set; }
         public virtual DbSet<UserProfile> UserProfile { get; set; }

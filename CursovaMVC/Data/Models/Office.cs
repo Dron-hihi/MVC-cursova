@@ -28,6 +28,6 @@ namespace CursovaMVC.Data.Models
         [ForeignKey("Sity")]
         public int O_SityId { get; set; }
 
-        public virtual Sity Sity { get; set; }
+        public virtual City Sity { get; set; }
     }
 }

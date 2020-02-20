@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - CursovaMVC</title>
 
     <environment include="Development">
+        <link href="~/css/site.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -17,24 +18,14 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CursovaMVC</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Kursach</a>
+            <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">
+                Register
+            </a>
+
         </div>
     </nav>
 

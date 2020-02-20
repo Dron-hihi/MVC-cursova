@@ -67,7 +67,7 @@ namespace CursovaMVC.Data.Models
         public int A_SityId { get; set; }
 
         public virtual House_Type House_Type { get; set; }
-        public virtual Sity Sity { get; set; }
+        public virtual City Sity { get; set; }
 
     }
 }

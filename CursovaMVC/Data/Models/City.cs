@@ -8,7 +8,7 @@ namespace CursovaMVC.Data
     /// <summary>
     /// Міста
     /// </summary>
-    public class Sity
+    public class City
     {
         /// <summary>
         /// ID

@@ -10,10 +10,7 @@ C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Curso
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.TagHelpers.input.cache
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.TagHelpers.output.cache
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.RazorCoreGenerate.cache
-C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -29,4 +26,5 @@ C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Curso
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.dll
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.pdb
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.csproj.CopyComplete
+C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
 C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\obj\Debug\netcoreapp2.1\CursovaMVC.csprojAssemblyReference.cache

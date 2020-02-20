@@ -39,7 +39,7 @@ namespace CursovaMVC.Data.Models
         public int SityId { get; set; }
 
         public virtual Storage_Type Storage_Type { get; set; }
-        public virtual Sity Sity { get; set; }
+        public virtual City Sity { get; set; }
 
 
     }

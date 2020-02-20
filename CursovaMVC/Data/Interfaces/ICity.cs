@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CursovaMVC.Data.Interfaces
 {
-    public interface ISity
+    public interface ICity
     {
     }
 }

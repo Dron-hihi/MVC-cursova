@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CursovaMVC.Data;
 using CursovaMVC.Data.EFContext;
+using CursovaMVC.Data.Interfaces;
+using CursovaMVC.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -40,6 +43,14 @@ namespace CursovaMVC
                 .AddEntityFrameworkStores<EFDBContext>()
                 .AddDefaultTokenProviders();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddTransient<IApartment, ApartmentRepository>();
+            services.AddTransient<IHouse, HouseRepository>();
+            services.AddTransient<IOffice, OfficeRepository>();
+            services.AddTransient<IStorage, StorageRepository>();
+            services.AddTransient<IHouse_Type, House_TypeRepository>();
+            services.AddTransient<IStorage_Type, Storage_TypeRepository>();
+            services.AddTransient<ICity, SityRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +67,8 @@ namespace CursovaMVC
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            //SeederDB.SeedData(app.ApplicationServices, env, this.Configuration);
 
             app.UseMvc(routes =>
             {

@@ -10,7 +10,7 @@ namespace CursovaMVC.Controllers.OfficeController
     public class OfficeController : Controller
     {
         private readonly IOffice _office;
-        private readonly ISity _sity;
+        private readonly ICity _sity;
 
 
         public IActionResult Index()

@@ -11,7 +11,7 @@ namespace CursovaMVC.Controllers.HouseController
     {
         private readonly IHouse _house;
         private readonly IHouse_Type _house_type;
-        private readonly ISity _sity;
+        private readonly ICity _sity;
 
 
         public IActionResult Index()

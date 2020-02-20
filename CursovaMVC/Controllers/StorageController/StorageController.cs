@@ -11,7 +11,7 @@ namespace CursovaMVC.Controllers.StorageController
     {
         private readonly IStorage _storage;
         private readonly IStorage_Type _storage_type;
-        private readonly ISity _sity;
+        private readonly ICity _sity;
 
 
         public IActionResult Index()
