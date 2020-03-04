@@ -251,6 +251,29 @@ namespace CursovaMVC.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Ground_Sections",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(nullable: true),
+                    Image = table.Column<string>(nullable: true),
+                    Area = table.Column<double>(nullable: false),
+                    Price = table.Column<double>(nullable: false),
+                    GS_SityId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Ground_Sections", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Ground_Sections_Sities_GS_SityId",
+                        column: x => x.GS_SityId,
+                        principalTable: "Sities",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Houses",
                 columns: table => new
                 {
@@ -387,6 +410,11 @@ namespace CursovaMVC.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Ground_Sections_GS_SityId",
+                table: "Ground_Sections",
+                column: "GS_SityId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Houses_H_HouseTypeId",
                 table: "Houses",
                 column: "H_HouseTypeId");
@@ -431,6 +459,9 @@ namespace CursovaMVC.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Ground_Sections");
 
             migrationBuilder.DropTable(
                 name: "Houses");

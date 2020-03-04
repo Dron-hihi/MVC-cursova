@@ -12,8 +12,8 @@ namespace CursovaMVC.Controllers.OfficeController
         private readonly IOffice _office;
         private readonly ICity _sity;
 
-
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult OfficeView()
         {
             return View();
         }

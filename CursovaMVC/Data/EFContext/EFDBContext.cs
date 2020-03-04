@@ -26,6 +26,7 @@ IdentityRoleClaim<string>, IdentityUserToken<string>>
         public virtual DbSet<Storage> Storages { get; set; }
         public virtual DbSet<Storage_Type> Storage_Types { get; set; }
         public virtual DbSet<UserProfile> UserProfile { get; set; }
+        public virtual DbSet<Ground_Section> Ground_Sections { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

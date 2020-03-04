@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CursovaMVC.Migrations
 {
     [DbContext(typeof(EFDBContext))]
-    [Migration("20200212205351_start")]
+    [Migration("20200226162516_start")]
     partial class start
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,19 @@ namespace CursovaMVC.Migrations
                 .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("CursovaMVC.Data.City", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sities");
+                });
 
             modelBuilder.Entity("CursovaMVC.Data.EFContext.DbRole", b =>
                 {
@@ -146,6 +159,29 @@ namespace CursovaMVC.Migrations
                     b.HasIndex("A_SityId");
 
                     b.ToTable("Apartments");
+                });
+
+            modelBuilder.Entity("CursovaMVC.Data.Models.Ground_Section", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("Area");
+
+                    b.Property<int>("GS_SityId");
+
+                    b.Property<string>("Image");
+
+                    b.Property<string>("Name");
+
+                    b.Property<double>("Price");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GS_SityId");
+
+                    b.ToTable("Ground_Sections");
                 });
 
             modelBuilder.Entity("CursovaMVC.Data.Models.House", b =>
@@ -285,19 +321,6 @@ namespace CursovaMVC.Migrations
                     b.ToTable("UserProfile");
                 });
 
-            modelBuilder.Entity("CursovaMVC.Data.Sity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Sities");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.Property<int>("Id")
@@ -395,9 +418,17 @@ namespace CursovaMVC.Migrations
                         .HasForeignKey("A_HouseTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("CursovaMVC.Data.Sity", "Sity")
+                    b.HasOne("CursovaMVC.Data.City", "Sity")
                         .WithMany()
                         .HasForeignKey("A_SityId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("CursovaMVC.Data.Models.Ground_Section", b =>
+                {
+                    b.HasOne("CursovaMVC.Data.City", "Sity")
+                        .WithMany()
+                        .HasForeignKey("GS_SityId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -408,7 +439,7 @@ namespace CursovaMVC.Migrations
                         .HasForeignKey("H_HouseTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("CursovaMVC.Data.Sity", "Sity")
+                    b.HasOne("CursovaMVC.Data.City", "Sity")
                         .WithMany()
                         .HasForeignKey("H_SityId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -416,7 +447,7 @@ namespace CursovaMVC.Migrations
 
             modelBuilder.Entity("CursovaMVC.Data.Models.Office", b =>
                 {
-                    b.HasOne("CursovaMVC.Data.Sity", "Sity")
+                    b.HasOne("CursovaMVC.Data.City", "Sity")
                         .WithMany()
                         .HasForeignKey("O_SityId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -424,7 +455,7 @@ namespace CursovaMVC.Migrations
 
             modelBuilder.Entity("CursovaMVC.Data.Models.Storage", b =>
                 {
-                    b.HasOne("CursovaMVC.Data.Sity", "Sity")
+                    b.HasOne("CursovaMVC.Data.City", "Sity")
                         .WithMany()
                         .HasForeignKey("SityId")
                         .OnDelete(DeleteBehavior.Cascade);

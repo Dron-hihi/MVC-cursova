@@ -13,8 +13,8 @@ namespace CursovaMVC.Controllers.StorageController
         private readonly IStorage_Type _storage_type;
         private readonly ICity _sity;
 
-
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult StorageView()
         {
             return View();
         }

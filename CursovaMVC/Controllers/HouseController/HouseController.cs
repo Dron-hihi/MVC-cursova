@@ -13,8 +13,8 @@ namespace CursovaMVC.Controllers.HouseController
         private readonly IHouse_Type _house_type;
         private readonly ICity _sity;
 
-
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult HouseView()
         {
             return View();
         }

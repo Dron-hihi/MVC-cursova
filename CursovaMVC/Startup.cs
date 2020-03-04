@@ -6,6 +6,7 @@ using CursovaMVC.Data;
 using CursovaMVC.Data.EFContext;
 using CursovaMVC.Data.Interfaces;
 using CursovaMVC.Data.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -42,15 +43,28 @@ namespace CursovaMVC
             services.AddIdentity<DbUser, DbRole>(options => options.Stores.MaxLengthForKeys = 128)
                 .AddEntityFrameworkStores<EFDBContext>()
                 .AddDefaultTokenProviders();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddTransient<IApartment, ApartmentRepository>();
             services.AddTransient<IHouse, HouseRepository>();
             services.AddTransient<IOffice, OfficeRepository>();
             services.AddTransient<IStorage, StorageRepository>();
+            services.AddTransient<IGround_Section, Ground_SectionRepository>();
             services.AddTransient<IHouse_Type, House_TypeRepository>();
             services.AddTransient<IStorage_Type, Storage_TypeRepository>();
             services.AddTransient<ICity, SityRepository>();
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                    options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                });
+
+            services.AddMemoryCache();
+            services.AddSession();
+
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,9 +78,9 @@ namespace CursovaMVC
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            app.UseSession();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+            //app.UseCookiePolicy();
 
             //SeederDB.SeedData(app.ApplicationServices, env, this.Configuration);
 

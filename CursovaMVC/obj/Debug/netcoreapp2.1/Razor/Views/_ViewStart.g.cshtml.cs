@@ -23,8 +23,13 @@ using CursovaMVC.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\DANUYK\source\repos\CursovaMVC\CursovaMVC\Views\_ViewImports.cshtml"
+using CursovaMVC.Data.Models;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b3b79b328adc54ecf7697c1c40b586aef2baf2e0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"af4dc0950f3d55a04c7b0aeaed6e2be25c21cb2e", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

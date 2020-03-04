@@ -12,6 +12,6 @@ namespace CursovaMVC.Data.Interfaces
         IEnumerable<Office> GetOfficesSity { get; }
 
         Office GetOffice(int OffiseId);
-        Office GetOfficeSity(int OfficeId);
+        Office GetOfficeSity(int OfficeSity);
     }
 }

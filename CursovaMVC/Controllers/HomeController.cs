@@ -16,16 +16,18 @@ namespace CursovaMVC.Controllers
         private readonly IHouse _house;
         private readonly IOffice _office;
         private readonly IStorage _storage;
+        private readonly IGround_Section _ground_Section;
         private readonly ICity _sity;
         private readonly IHouse_Type _house_Type;
         private readonly IStorage_Type _storage_Type;
 
-        public HomeController(IApartment apartment, IHouse house, IOffice office, IStorage storage, ICity sity, IHouse_Type house_Type, IStorage_Type storage_Type)
+        public HomeController(IApartment apartment, IHouse house, IOffice office, IStorage storage, IGround_Section ground_Section, ICity sity, IHouse_Type house_Type, IStorage_Type storage_Type)
         {
             _apartment = apartment;
             _house = house;
             _office = office;
             _storage = storage;
+            _ground_Section = ground_Section;
             _sity = sity;
             _house_Type = house_Type;
             _storage_Type = storage_Type;

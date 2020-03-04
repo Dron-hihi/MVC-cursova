@@ -1,0 +1,18 @@
+﻿@model CursovaMVC.ViewModels.ApartmentViewModel
+@{
+    ViewData["Title"] = "ApartmentView";
+}
+
+    <div class="row mt-5 mb-2 row">
+        @{
+            foreach (Apartment item in Model.GetApartments)
+            {
+                @await Html.PartialAsync("_InfoCard", item)
+            }
+
+        }
+    </div>
+
+
+<h2>ApartmentView</h2>
+
