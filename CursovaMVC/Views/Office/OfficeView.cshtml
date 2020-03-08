@@ -3,5 +3,15 @@
     ViewData["Title"] = "OfficeView";
 }
 
+<div class="row mt-5 mb-2 row">
+    @{
+        foreach (Office item in Model.GetOffices)
+        {
+            @await Html.PartialAsync("_InfoCard", item)
+        }
+
+    }
+</div>
+
 <h2>OfficeView</h2>
 

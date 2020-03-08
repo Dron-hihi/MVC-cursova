@@ -240,6 +240,8 @@ namespace CursovaMVC.Migrations
 
                     b.Property<int>("Floor");
 
+                    b.Property<string>("Image");
+
                     b.Property<string>("Name");
 
                     b.Property<int>("O_SityId");
@@ -260,6 +262,8 @@ namespace CursovaMVC.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Image");
 
                     b.Property<string>("Name");
 

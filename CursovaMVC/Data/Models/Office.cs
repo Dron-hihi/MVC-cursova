@@ -8,8 +8,18 @@ namespace CursovaMVC.Data.Models
 {
     public class Office
     {
+        /// <summary>
+        /// ID
+        /// </summary>
         public int Id { get; set; }
+        /// <summary>
+        /// Назва офісу
+        /// </summary>
         public string Name { get; set; }
+        /// <summary>
+        /// Зображення офісу
+        /// </summary>
+        public string Image { get; set; }
         /// <summary>
         /// Площа складу
         /// </summary>

@@ -3,5 +3,15 @@
     ViewData["Title"] = "Ground_SectionView";
 }
 
+<div class="row mt-5 mb-2 row">
+    @{
+        foreach (Ground_Section item in Model.GetGround_Sections)
+        {
+            @await Html.PartialAsync("_InfoCard", item)
+        }
+
+    }
+</div>
+
 <h2>Ground_SectionView</h2>
 

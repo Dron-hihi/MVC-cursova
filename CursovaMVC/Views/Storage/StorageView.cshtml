@@ -3,5 +3,15 @@
     ViewData["Title"] = "StorageView";
 }
 
+<div class="row mt-5 mb-2 row">
+    @{
+        foreach (Storage item in Model.GetStorages)
+        {
+            @await Html.PartialAsync("_InfoCard", item)
+        }
+
+    }
+</div>
+
 <h2>StorageView</h2>
 

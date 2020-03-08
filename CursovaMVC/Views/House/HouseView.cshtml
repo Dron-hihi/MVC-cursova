@@ -3,5 +3,15 @@
     ViewData["Title"] = "HouseView";
 }
 
+<div class="row mt-5 mb-2 row">
+    @{
+        foreach (House item in Model.GetHouses)
+        {
+            @await Html.PartialAsync("_InfoCard", item)
+        }
+
+    }
+</div>
+
 <h2>HouseView</h2>
 

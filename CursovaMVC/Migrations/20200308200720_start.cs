@@ -315,6 +315,7 @@ namespace CursovaMVC.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
+                    Image = table.Column<string>(nullable: true),
                     Total_Area = table.Column<double>(nullable: false),
                     Floor = table.Column<int>(nullable: false),
                     Price = table.Column<double>(nullable: false),
@@ -338,6 +339,7 @@ namespace CursovaMVC.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
+                    Image = table.Column<string>(nullable: true),
                     Total_Area = table.Column<double>(nullable: false),
                     Price = table.Column<double>(nullable: false),
                     StorageTypeId = table.Column<int>(nullable: false),

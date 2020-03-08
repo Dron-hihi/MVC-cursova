@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CursovaMVC.Migrations
 {
     [DbContext(typeof(EFDBContext))]
-    [Migration("20200226162516_start")]
+    [Migration("20200308200720_start")]
     partial class start
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -242,6 +242,8 @@ namespace CursovaMVC.Migrations
 
                     b.Property<int>("Floor");
 
+                    b.Property<string>("Image");
+
                     b.Property<string>("Name");
 
                     b.Property<int>("O_SityId");
@@ -262,6 +264,8 @@ namespace CursovaMVC.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Image");
 
                     b.Property<string>("Name");
 

@@ -20,6 +20,10 @@ namespace CursovaMVC.Data.Models
         /// </summary>
         public string Name { get; set; }
         /// <summary>
+        /// Зображення складу
+        /// </summary>
+        public string Image { get; set; }
+        /// <summary>
         /// Площа складу
         /// </summary>
         public double Total_Area { get; set; }

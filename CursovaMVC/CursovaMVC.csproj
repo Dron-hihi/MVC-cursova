@@ -12,4 +12,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Apartments\" />
+    <Folder Include="wwwroot\images\House\" />
+    <Folder Include="wwwroot\images\Storages\" />
+    <Folder Include="wwwroot\images\Offices\" />
+    <Folder Include="wwwroot\images\Ground_Sections\" />
+  </ItemGroup>
+
 </Project>

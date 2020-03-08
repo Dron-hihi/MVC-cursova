@@ -19,8 +19,6 @@ namespace CursovaMVC.Controllers.ApartmentController
             _apartment = apartment;
         }
 
-
-
         [HttpGet]
         public IActionResult ApartmentView()
         {
