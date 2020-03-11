@@ -8,7 +8,8 @@
     <environment include="Development">
         <link href="~/css/site.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/css/StyleSheet.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -19,22 +20,31 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ГОЛОВНА</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"> Головна </a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Apartment" asp-action="ApartmentView"> Квартири </a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="House" asp-action="HouseView"> Будинки </a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Office" asp-action="OfficeView"> Офіси </a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Storage" asp-action="StorageView"> Склади </a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Ground_Section" asp-action="Ground_SectionView"> Ділянки </a>
-            <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">
-                Register
-            </a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="ShopCart" asp-action="Index">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">
-                Login
-            </a>
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Apartment" asp-action="ApartmentView" asp-route-category="">Квартири</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="House" asp-action="HouseView" asp-route-category="">Будинки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Office" asp-action="OfficeView" asp-route-category="">Офіси</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Storage" asp-action="StorageView" asp-route-category="">Склади</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Ground_Section" asp-action="Ground_SectionView" asp-route-category="">Ділянки</a>
+                </li>
+            </ul>
+            <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Регістрація</a>
+            <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Ввійти</a>
             <form class="form-inline my-2 my-lg-0" asp-controller="Account" asp-action="Logout">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                     Logout
@@ -43,10 +53,6 @@
         </div>
 
     </nav>
-
-
-
-
 
     <partial name="_CookieConsentPartial" />
 

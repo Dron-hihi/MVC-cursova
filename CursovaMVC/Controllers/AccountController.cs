@@ -46,20 +46,20 @@ namespace CursovaMVC.Controllers
 
             var roleName = "User";
 
-            var result = _roleManager.CreateAsync(new DbRole
-            {
-                Name = roleName
-            }).Result;
-            roleName = "Rieltor";
-            result = _roleManager.CreateAsync(new DbRole
-            {
-                Name = roleName
-            }).Result;
-            roleName = "Admin";
-            result = _roleManager.CreateAsync(new DbRole
-            {
-                Name = roleName
-            }).Result;
+            //var result = _roleManager.CreateAsync(new DbRole
+            //{
+            //    Name = roleName
+            //}).Result;
+            //roleName = "Rieltor";
+            //result = _roleManager.CreateAsync(new DbRole
+            //{
+            //    Name = roleName
+            //}).Result;
+            //roleName = "Admin";
+            //result = _roleManager.CreateAsync(new DbRole
+            //{
+            //    Name = roleName
+            //}).Result;
 
             if (ModelState.IsValid)
             {

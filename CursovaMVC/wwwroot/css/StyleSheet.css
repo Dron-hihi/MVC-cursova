@@ -1,0 +1,27 @@
+﻿.round {
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    height: 150px;
+}
+
+.th-style {
+    background-color: green;
+    padding: 4px 20px 4px 20px;
+}
+
+td {
+    text-align: center;
+    font-size: 30px;
+}
+
+    td:first-child {
+        background-color: forestgreen;
+    }
+.contm {
+    background-color: rgba(226, 217, 106, 0.57);
+}
+.cardm {
+    margin: 15px;
+}

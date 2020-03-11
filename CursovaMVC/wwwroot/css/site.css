@@ -3,6 +3,7 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     background-image: url('../images/default1.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Wrapping element */
@@ -35,3 +36,4 @@ body {
         display: none;
     }
 }
+
