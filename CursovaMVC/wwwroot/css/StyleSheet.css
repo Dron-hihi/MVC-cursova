@@ -20,8 +20,61 @@ td {
         background-color: forestgreen;
     }
 .contm {
-    background-color: rgba(226, 217, 106, 0.57);
+    margin-top: 5px;
+    background-color: rgba(195, 193, 173, 0.52);
+    border-radius:15px;
 }
 .cardm {
-    margin: 15px;
+    margin: 35px;
 }
+.fromdiv {
+    margin:20px;
+    padding:5px;
+    border-radius:10px;
+}
+.divicon {
+    margin: 20px;
+    padding: 10px;
+}
+.divicon1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+    .divicon1:hover {
+        border-radius: 20px;
+        background-color: rgba(31, 9, 232, 0.82);
+    }
+.navv {
+    background-color: rgba(130, 120, 228, 0.39);
+}
+.navtextmain {
+    border-radius: 10px;
+    background-color: rgba(46, 24, 3, 0.78);
+    margin: 2px;
+    border: 7px double orange;
+    text-align: center;
+}
+    .navtextmain:hover {
+        background-color: rgb(73, 42, 12);
+    }
+.navtext {
+    border-radius: 10px;
+    background-color: rgba(255, 78, 0, 0.72);
+    margin:2px;
+    border: 7px double orange;
+    text-align:center;
+}
+    .navtext:hover {
+        background-color: rgb(255, 78, 0);
+    }
+.navtextus {
+    border-radius: 10px;
+    background-color: rgba(232, 120, 13, 0.73);
+    margin: 2px;
+    border: 7px double orange;
+    text-align: center;
+}
+    .navtextus:hover {
+        background-color: rgba(232, 120, 13, 0.92);
+    }
