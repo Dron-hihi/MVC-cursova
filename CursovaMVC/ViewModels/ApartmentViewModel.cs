@@ -9,7 +9,8 @@ namespace CursovaMVC.ViewModels
     public class ApartmentViewModel
     {
         public IEnumerable<Apartment> GetApartments { get; set; }
-        public IEnumerable<Apartment> GetApType { get; set; }
-        public IEnumerable<Apartment> GetApSity { get; set; }
+
+        public string HouseType { get; set; }
+        public IEnumerable<House_Type> TypeHouse { get; set; }
     }
 }

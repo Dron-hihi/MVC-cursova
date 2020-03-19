@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace CursovaMVC.Data.Repository
 {
-    public class House_TypeRepository:IHouse_Type
+    public class House_TypeRepository: IHouse_Type
     {
         private readonly EFDBContext _context;
         public House_TypeRepository(EFDBContext context)
         {
             _context = context;
         }
-        public IEnumerable<House_Type> House_Types => _context.House_Types;
+        public IEnumerable<House_Type> house_Types => _context.House_Types.OrderBy(x => x.Name);
+
     }
 }
