@@ -7,9 +7,21 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/House.css" />
     <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link href="~/css/filterStyle.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </environment>
+<div class="container d-flex justify-content-center">
+    <a class="style_a" asp-controller="House" asp-action="HouseView" asp-route-category="">Всі Будинки</a>
 
+    @foreach (var houseType in Model.TypeHouse)
+    {
+        <a class="style_a" asp-controller="House" asp-action="HouseView"
+           asp-route-category="@houseType.Name">
+            @houseType.Name
+        </a>
+    }
+
+</div>
 <div class="row mt-5 mb-2 d-flex justify-content-center contm">
     @{
         foreach (House item in Model.GetHouses)

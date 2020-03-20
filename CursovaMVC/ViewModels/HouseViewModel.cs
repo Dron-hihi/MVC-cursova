@@ -9,7 +9,7 @@ namespace CursovaMVC.ViewModels
     public class HouseViewModel
     {
         public IEnumerable<House> GetHouses { get; set; }
-        public IEnumerable<House> GetHoType { get; set; }
-        public IEnumerable<House> GetHoSity { get; set; }
+        public string HouseType { get; set; }
+        public IEnumerable<House_Type> TypeHouse { get; set; }
     }
 }

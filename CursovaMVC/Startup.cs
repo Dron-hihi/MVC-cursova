@@ -91,8 +91,18 @@ namespace CursovaMVC
                     template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute(
                     name: "categoryfilter",
-                    template: "Apartment/{action}/{house_Type?}",
+                    template: "Apartment/{action}/{category?}",
                     defaults: new { Controller = "Apartment", action = "ApartmentView" });
+            });
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "categoryfilter",
+                    template: "House/{action}/{category?}",
+                    defaults: new { Controller = "House", action = "HouseView" });
             });
         }
     }

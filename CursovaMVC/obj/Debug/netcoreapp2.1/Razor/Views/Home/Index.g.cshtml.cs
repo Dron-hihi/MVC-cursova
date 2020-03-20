@@ -70,7 +70,7 @@ using CursovaMVC.Data.Models;
             WriteLiteral("\r\n<div class=\"fromdiv\">\r\n    ");
             EndContext();
             BeginContext(74, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7346c91163f04d2ea2815848ed941717", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "486b1afdeb7447a88d7e41e1ba8f5286", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -94,7 +94,7 @@ using CursovaMVC.Data.Models;
                 ");
             EndContext();
             BeginContext(367, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f1a4c953765a45b99d9337773830f10d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "45097fd8c2f04ec78866dfa3fa318568", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -112,7 +112,7 @@ using CursovaMVC.Data.Models;
             WriteLiteral("\r\n                <label>Квартири</label>\r\n            </a>\r\n        </div>\r\n        <div class=\"divicon1\">\r\n            <a href=\"http://localhost:57206/House/HouseView\">\r\n                ");
             EndContext();
             BeginContext(597, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "021eeb64bd4c4afd80aaa1720cf939e7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c4085821ab134dc59f95a1f302eecf83", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -130,7 +130,7 @@ using CursovaMVC.Data.Models;
             WriteLiteral("\r\n                <label>Будинки</label>\r\n            </a>\r\n        </div>\r\n        <div class=\"divicon1\">\r\n            <a href=\"http://localhost:57206/Office/OfficeView\">\r\n                ");
             EndContext();
             BeginContext(824, 39, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4470416d0c0d4b0383dac6bb48447300", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "055c8363fec54e78a4514852185ad6ba", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -148,7 +148,7 @@ using CursovaMVC.Data.Models;
             WriteLiteral("\r\n                <label>Офіси</label>\r\n            </a>\r\n        </div>\r\n        <div class=\"divicon1\">\r\n            <a href=\"http://localhost:57206/Storage/StorageView\">\r\n                ");
             EndContext();
             BeginContext(1052, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "deef0f35c4d84137a427df6cd1676e74", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "22052c52eff849508b42fa23fa581483", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -166,7 +166,7 @@ using CursovaMVC.Data.Models;
             WriteLiteral("\r\n                <label>Склади</label>\r\n            </a>\r\n        </div>\r\n        <div class=\"divicon1\">\r\n            <a href=\"http://localhost:57206/Ground_Section/Ground_SectionView\">\r\n                ");
             EndContext();
             BeginContext(1296, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "27a5a91a43e64d26bc3d6b2bfcc292df", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "14669acc452c4317923752fb2c16dbb1", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
